@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>STA Twitch Carousel</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,8 +11,8 @@
     <style>
         body {
             font-family: 'Rubik', sans-serif;
-            /* color: #000000; */
             color: #ffffff;
+            /* color: #000000; */
             font-size: 36px;
             text-align: right;
             padding-top: 10px;
@@ -38,28 +38,33 @@
 <script>
     const SOCIALS = [
         {
+            name: "raffle",
+            cta: "🥳Enter our Inktober raffle!",
+            url: "#inktober #sketchtoanimiate"
+        },
+        {
             name: "discord",
-            cta: "Submit Your Work",
+            cta: "Submit Your Work:",
             url: "sketchtoanimate.com/discord"
         },
         {
             name: "youtube",
-            cta: "Check out Back to Basics",
+            cta: "Check out Back to Basics:",
             url: "youtube.com/sketchtoanimate"
         },
         {
             name: "twitter",
-            cta: "Follow us on twitter",
+            cta: "Follow us on twitter:",
             url: "@sketchtoanimate"
         },
         {
             name: "instagram",
-            cta: "Follow us on instagram",
+            cta: "Follow us on instagram:",
             url: "@sketchtoanimate"
         },
         {
             name: "website",
-            cta: "Subscribe to our newsletter",
+            cta: "Subscribe to our newsletter:",
             url: "sketchtoanimate.com"
         }
     ]
@@ -83,7 +88,7 @@
             if (loopCount % 2 === 1) {
 
                 index++;
-                carousel.lastElementChild.innerHTML = "<p>" + SOCIALS[index % SOCIALS.length].cta + ": <span class='url'>" + SOCIALS[index % SOCIALS.length].url + "</span></p>";
+                carousel.lastElementChild.innerHTML = "<p>" + SOCIALS[index % SOCIALS.length].cta + " <span class='url'>" + SOCIALS[index % SOCIALS.length].url + "</span></p>";
 
             }
         }
