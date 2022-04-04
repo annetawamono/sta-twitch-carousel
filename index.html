@@ -92,6 +92,8 @@
                 index++;
                 carousel.lastElementChild.innerHTML = "<p>" + SOCIALS[index % SOCIALS.length].cta + " <span class='url'>" + SOCIALS[index % SOCIALS.length].url + "</span></p>";
 
+                console.log("index", index % SOCIALS.length)
+                console.log("url", SOCIALS[index % SOCIALS.length].url);
             }
         }
     });
